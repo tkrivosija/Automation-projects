@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.3.50</Version>
+    <SymbolConfigObject version="3.5.3.50" />
+    <ProjectInfo name="Seminarski" devicename="MyController" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_UINT" size="2" swapsize="2" typeclass="UInt" iecname="UINT" />
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeUserDef name="T_RTS_SYSTIMEDATE" size="18" nativesize="18" typeclass="Userdef" iecname="RTS_SYSTIMEDATE">
+      <UserDefElement type="T_UINT" iecname="wYear" byteoffset="0" />
+      <UserDefElement type="T_UINT" iecname="wMonth" byteoffset="2" />
+      <UserDefElement type="T_UINT" iecname="wDay" byteoffset="4" />
+      <UserDefElement type="T_UINT" iecname="wHour" byteoffset="6" />
+      <UserDefElement type="T_UINT" iecname="wMinute" byteoffset="8" />
+      <UserDefElement type="T_UINT" iecname="wSecond" byteoffset="10" />
+      <UserDefElement type="T_UINT" iecname="wMilliseconds" byteoffset="12" />
+      <UserDefElement type="T_UINT" iecname="wDayOfWeek" byteoffset="14" />
+      <UserDefElement type="T_UINT" iecname="wYday" byteoffset="16" />
+    </TypeUserDef>
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_UDINT" size="4" swapsize="4" typeclass="UDInt" iecname="UDINT" />
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="GVL">
+        <Node name="a" type="T_BOOL" access="ReadWrite" />
+        <Node name="flag1" type="T_UDINT" access="ReadWrite" />
+        <Node name="flag2" type="T_UDINT" access="ReadWrite" />
+        <Node name="I1" type="T_BOOL" access="ReadWrite" />
+        <Node name="I10" type="T_BOOL" access="ReadWrite" />
+        <Node name="I2" type="T_BOOL" access="ReadWrite" />
+        <Node name="I3" type="T_BOOL" access="ReadWrite" />
+        <Node name="I4" type="T_BOOL" access="ReadWrite" />
+        <Node name="I5" type="T_BOOL" access="ReadWrite" />
+        <Node name="I6" type="T_BOOL" access="ReadWrite" />
+        <Node name="I7" type="T_BOOL" access="ReadWrite" />
+        <Node name="I8" type="T_BOOL" access="ReadWrite" />
+        <Node name="I9" type="T_BOOL" access="ReadWrite" />
+        <Node name="minuta1" type="T_UINT" access="ReadWrite" />
+        <Node name="minuta2" type="T_UINT" access="ReadWrite" />
+        <Node name="mod_rada" type="T_UINT" access="ReadWrite" />
+        <Node name="pDate" type="T_RTS_SYSTIMEDATE" access="ReadWrite" />
+        <Node name="Q1" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q10" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q2" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q3" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q4" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q5" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q6" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q7" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q8" type="T_BOOL" access="ReadWrite" />
+        <Node name="Q9" type="T_BOOL" access="ReadWrite" />
+        <Node name="reset1" type="T_UINT" access="ReadWrite" />
+        <Node name="reset2" type="T_UINT" access="ReadWrite" />
+        <Node name="sat1" type="T_UINT" access="ReadWrite" />
+        <Node name="sat2" type="T_UINT" access="ReadWrite" />
+        <Node name="sekunda1" type="T_UINT" access="ReadWrite" />
+        <Node name="sekunda2" type="T_UINT" access="ReadWrite" />
+        <Node name="STRG" type="T_DWORD" access="ReadWrite" />
+        <Node name="trenutno_vrijeme" type="T_RTS_SYSTIMEDATE" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
